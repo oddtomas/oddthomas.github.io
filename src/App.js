@@ -1,25 +1,28 @@
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
+import background from "../src/pictures/background.jpg"
+import github from '../src/pictures/github.png'; 
+import linkedin from '../src/pictures/linkedin.png'; 
 
-function App() {
+
+
+class App extends Component {
+  render () {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+    <div className="App" style={{ backgroundImage: `url(${background})` }}
+    >
+      <p id="links">
+      
+      <a href="https://github.com/oddtomas"><img src={github} alt="github" width="50" height="50" /></a>
+      
+        <a href="https://www.linkedin.com/in/thomas-nguyen-9665761a7/"> <img src={linkedin} alt="linkedin" width="50" height="50" /></a>
+    </p>
+      <h1 id="head">DEV.</h1>
+</div>
+</>
+  )
+  }
 }
 
 export default App;
