@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Navbar from './components/Navbar.js'
 import './App.css';
 import background from "../src/pictures/background.jpg"
 import github from '../src/pictures/github.png'; 
@@ -7,6 +8,13 @@ import linkedin from '../src/pictures/linkedin.png';
 
 
 class App extends Component {
+  constructor (props){
+    super(props)
+this.state = {
+
+}
+
+  }
   render () {
   return (
     <>
