@@ -4,7 +4,7 @@ import './App.css';
 import background from "../src/pictures/background.jpg"
 import github from '../src/pictures/github.png'; 
 import linkedin from '../src/pictures/linkedin.png'; 
-import {Route, BrowserRouter as Router, Link} from "react-router-dom";
+import {Route, BrowserRouter as Router, Link} from "react-router-dom"; //has to be saved?
 import About from "./pages/About"
 import Home from "./pages/Home"
 import Projects from "./pages/Projects"
