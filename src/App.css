@@ -1,7 +1,4 @@
-#head {
-text-align: center;
 
-}
 
  .App{
   background: url("background.jpg");
@@ -20,3 +17,8 @@ text-align: center;
     #email{
     text-align: right;
     }
+
+  .test{
+    text-align: center;
+background-color: aliceblue; 
+ }
