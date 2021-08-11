@@ -19,6 +19,14 @@ this.state = {
 }
 
   }
+
+githubClick = () => {
+    window.open("https://github.com/oddtomas")
+  }
+linkedInClick = () => {
+    window.open("https://www.linkedin.com/in/thomas-nguyen-9665761a7/")
+  }
+
   render () {
   return (
     <Router>
@@ -27,9 +35,9 @@ this.state = {
     >
       <p id="links">
       
-      <a href="https://github.com/oddtomas"><img src={github} alt="github" width="50" height="50" /></a>
+      <a href="_self" onClick={this.githubClick} ><img src={github} alt="github" width="50" height="50" /></a>
       
-        <a href="https://www.linkedin.com/in/thomas-nguyen-9665761a7/"> <img src={linkedin} alt="linkedin" width="50" height="50" /></a>
+        <a href="_self" onClick={this.linkedInClick}> <img src={linkedin} alt="linkedin" width="50" height="50" /></a>
     </p>
       <nav>
           <ul>
