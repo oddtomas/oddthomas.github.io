@@ -8,6 +8,7 @@ import {Route, BrowserRouter as Router, Link} from "react-router-dom"; //has to 
 import About from "./pages/About"
 import Home from "./pages/Home"
 import Projects from "./pages/Projects"
+import Footer from './components/footer';
 
 
 
@@ -20,10 +21,10 @@ this.state = {
 
   }
 
-githubClick = () => {
+githubClick = (props) => {
     window.open("https://github.com/oddtomas")
   }
-linkedInClick = () => {
+linkedInClick = (props) => {
     window.open("https://www.linkedin.com/in/thomas-nguyen-9665761a7/")
   }
 
@@ -34,10 +35,10 @@ linkedInClick = () => {
     <div className="App" style={{ backgroundImage: `url(${background})` }}
     >
       <p id="links">
+      {/* left or middle mouse click takes you off page when creating new tab*/}
+      <a href="_self" onClick={this.githubClick} onMouseDown={this.githubClick} ><img src={github} alt="github" width="50" height="50" /></a>
       
-      <a href="_self" onClick={this.githubClick} ><img src={github} alt="github" width="50" height="50" /></a>
-      
-        <a href="_self" onClick={this.linkedInClick}> <img src={linkedin} alt="linkedin" width="50" height="50" /></a>
+        <a href="_self" onClick={this.linkedInClick} onMouseDown={this.linkedInClick}> <img src={linkedin} alt="linkedin" width="50" height="50" /></a>
     </p>
       <nav>
           <ul>
@@ -46,6 +47,8 @@ linkedInClick = () => {
               
              <p> <Link to="/about">About</Link> </p>
              <p> <Link to="/projects">Projects</Link> </p>
+      
+
 
               
           </ul>
@@ -57,6 +60,9 @@ linkedInClick = () => {
       </div>
 </div>
 </>
+<Footer>
+</Footer>
+
 </Router>
   )
   }
