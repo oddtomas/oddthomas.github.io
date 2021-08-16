@@ -9,6 +9,9 @@ import About from "./pages/About";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 // import Footer from "./components/footer";
+import { render } from "react-dom";
+import Demo from "./components/demo";
+render(<Demo />, document.getElementById("root"));
 
 class App extends Component {
   constructor(props) {
@@ -66,6 +69,8 @@ class App extends Component {
               <Route path="/about" component={About} />
               <Route path="/projects" component={Projects} />
             </div>
+            <br></br>
+            <Demo id="demo"></Demo>
           </div>
         </>
         {/* <Footer></Footer> */}
