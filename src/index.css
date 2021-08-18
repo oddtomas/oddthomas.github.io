@@ -1,4 +1,12 @@
-html{
-  background-image: url(background.jpg);   
+html {
+  background-image: url(canvas.jpg);
 }
-
+html {
+  overflow: hidden;
+  height: 100%;
+}
+/* gets rid of white space overscroll */
+body {
+  overflow: auto;
+  height: 100%;
+}
