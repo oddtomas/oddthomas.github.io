@@ -3,7 +3,7 @@ import React, { Component } from "react";
 class About extends Component {
   render() {
     return (
-      <>
+      <div className="page">
         <p class="test">
           Hi I'm Thomas! I am a full stack software developer with a passion for
           clean and efficient code. I also love making sleek and intuitive front
@@ -15,7 +15,7 @@ class About extends Component {
         -specialized developer skills
         -contact info
         -how you want to brand yourself */}
-      </>
+      </div>
     );
   }
 }

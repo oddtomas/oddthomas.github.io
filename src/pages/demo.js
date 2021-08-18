@@ -1,10 +1,9 @@
 import React, { Component } from "react";
 import ReactTextTransition, { presets } from "react-text-transition";
-import "./demo.css";
 
 const randomNumber = () => Math.floor(Math.random() * 9999999999 + 100000);
 
-const texts = ["Fast", "Scalable", "Creative"];
+const texts = ["fast", "scalable", "creative"];
 
 // const paragraphs = [
 //   "Quis commodo velit quis cupidatat non amet aliqua sint veniam labore. Culpa ea laboris consequat mollit proident Lorem cupidatat officia fugiat. Tempor sunt non ullamco irure in proident. Laboris minim esse qui non id et anim commodo. Esse id do irure ut eiusmod aliqua irure dolor in est ullamco culpa enim. ",
@@ -18,7 +17,7 @@ class Demo extends Component {
     number: randomNumber(),
     textIndex: 0,
     textFastIndex: 0,
-    paragraphIndex: 0,
+    // paragraphIndex: 0,
   };
 
   componentDidMount() {
@@ -26,7 +25,7 @@ class Demo extends Component {
       this.setState({
         number: randomNumber(),
         textIndex: this.state.textIndex + 1,
-        paragraphIndex: this.state.paragraphIndex + 1,
+        // paragraphIndex: this.state.paragraphIndex + 1,
       });
     }, 100);
     setInterval(() => {
@@ -41,12 +40,12 @@ class Demo extends Component {
       <React.Fragment>
         <section>
           {/* <h2>Fast transition.</h2> */}
-          <section className="inline">
-            Developing with the goal of creating
+          <section className="swapText">
+            I enjoy creating
             <ReactTextTransition
               text={texts[this.state.textFastIndex % texts.length]}
               springConfig={presets.gentle}
-              style={{ margin: "0 4px" }}
+              style={{ margin: "0 7px" }}
               inline
               overflow
             />

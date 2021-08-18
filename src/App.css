@@ -18,9 +18,91 @@
 .test {
   text-align: center;
   /* background-color: aliceblue; */
+  font-family: "Press Start 2P", cursive;
+  margin-top: 200px;
 }
 
-#img {
+/* project images */
+/* #img {
   position: absolute;
   right: 0%;
+} */
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 23.33%;
+  padding: 15px;
+  margin-left: 100px;
+  margin-top: 50px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/* ///////////////////////////////////////////// */
+
+/* text animations /Home */
+#typewriter {
+  position: relative;
+  margin-left: 500px;
+  /* margin-top: 250px; */
+  font-family: "Press Start 2P", cursive;
+}
+
+.swapText {
+  position: relative;
+  margin-left: 500px;
+  /* margin-top: 250px; */
+  font-family: "Press Start 2P", cursive;
+}
+
+#inProgress {
+  margin-left: 500px;
+  font-family: "Press Start 2P", cursive;
+}
+/* /////////////////////////////////////////////////// */
+
+.navigation {
+  font-size: 20px;
+  padding: 16px 48px;
+  color: black;
+  height: 100vh;
+  text-decoration: none;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  font-family: "Press Start 2P", cursive;
+}
+.navigation:hover {
+  color: yellow;
+  box-shadow: 1px 1px 30px 5px rgb(7, 255, 193);
+  background-color: #06fcbe;
+}
+
+/* page styles */
+.page {
+  /* position: absolute; */
+  top: 100px;
+  left: 0;
+  right: 0;
+}
+.fade-appear,
+.fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+.fade-appear-active,
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms linear 150ms;
+}
+.fade-exit {
+  opacity: 1;
+}
+.fade-exit.fade-exit-active {
+  opacity: 0;
+  transition: opacity 150ms linear;
 }
