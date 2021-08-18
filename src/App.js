@@ -12,6 +12,7 @@ import {
 import About from "./pages/About";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
+import Contact from "./pages/Contact";
 
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 
@@ -83,6 +84,16 @@ class App extends Component {
                     Projects
                   </NavLink>{" "}
                 </p>
+                <p>
+                  {" "}
+                  <NavLink
+                    to="/contact"
+                    activeClassName="active"
+                    className="navigation"
+                  >
+                    Contact
+                  </NavLink>{" "}
+                </p>
               </ul>
             </div>
             <Route /*renders transition group all the time  */
@@ -99,6 +110,7 @@ class App extends Component {
                       <Route exact path="/" component={Home} />
                       <Route path="/about" component={About} />
                       <Route path="/projects" component={Projects} />
+                      <Route path="/contact" component={Contact} />
                     </Switch>
                   </CSSTransition>
                 </TransitionGroup>

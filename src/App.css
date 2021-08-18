@@ -22,11 +22,9 @@
   margin-top: 200px;
 }
 
-/* project images */
-/* #img {
-  position: absolute;
-  right: 0%;
-} */
+#form {
+  margin-left: 500px;
+}
 /* Three image containers (use 25% for four, and 50% for two, etc) */
 .column {
   float: left;
@@ -100,7 +98,7 @@
   transition: opacity 300ms linear 150ms;
 }
 .fade-exit {
-  opacity: 1;
+  opacity: 0; /* leave at 0 or you get an image lag when exiting*/
 }
 .fade-exit.fade-exit-active {
   opacity: 0;
