@@ -5,9 +5,15 @@
   background-repeat: no-repeat;
   background-size: cover;
 } */
+#name {
+  position: absolute;
+  top: 0%;
+}
+
 .skills {
   position: absolute;
   bottom: 0;
+  right: 0%;
 }
 
 .demoPage {
@@ -22,30 +28,36 @@
 #email {
   text-align: right;
 }
-
+/* // */
 .about {
+  font-size: 24px;
   position: relative;
   left: 45%;
   top: 50%;
   width: 500px;
   height: 100px;
   margin-left: -100px;
+  font-family: "Bebas Neue", cursive;
 }
 .extra {
+  font-size: 24px;
   position: absolute;
   bottom: 0;
   left: 40%;
+  font-family: "Bebas Neue", cursive;
 }
-/* 
-#form {
+
+.form {
   position: relative;
-  left: 50%;
-  top: 50%;
+  left: 35%;
+  /* top: 50%; */
   width: 500px;
   height: 100px;
   margin-left: -100px;
-  margin-top: 10px;
-} */
+  /* margin-top: 10px; */
+  font-family: "Bebas Neue", cursive;
+  font-size: 24px;
+}
 /* Three image containers (use 25% for four, and 50% for two, etc) */
 .column {
   float: left;

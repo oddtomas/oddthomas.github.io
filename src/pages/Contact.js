@@ -4,6 +4,8 @@ class Contact extends Component {
   render() {
     return (
       <div className="page">
+        <h1 className="form">Let's Talk</h1>
+
         <form
           action="https://formsubmit.co/oddthomas@csu.fullerton.edu"
           method="POST"
@@ -16,7 +18,13 @@ class Contact extends Component {
             placeholder="Your Email"
             className="form"
           ></input>
-          <input type="text" name="name" required placeholder="name"></input>
+          <input
+            type="text"
+            name="name"
+            required
+            placeholder="name"
+            className="form"
+          ></input>
           <input
             type="text"
             name="message"

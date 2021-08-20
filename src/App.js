@@ -56,7 +56,7 @@ class App extends Component {
                 <img src={linkedin} alt="linkedin" width="50" height="50" />
               </a>
             </p>
-
+            {/* <h4 id="name">Thomas Nguyen</h4> */}
             <div className="nav">
               <ul>
                 <NavLink
