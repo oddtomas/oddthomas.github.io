@@ -1,11 +1,19 @@
-.App {
+/* .App {
   background: url("canvas.jpg");
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+} */
+.skills {
+  position: absolute;
+  bottom: 0;
 }
 
+.demoPage {
+  background-color: aliceblue;
+  margin-left: 300px;
+}
 /* contain */
 
 #links {
@@ -15,16 +23,29 @@
   text-align: right;
 }
 
-.test {
-  text-align: center;
-  /* background-color: aliceblue; */
-  font-family: "Press Start 2P", cursive;
-  margin-top: 200px;
+.about {
+  position: relative;
+  left: 45%;
+  top: 50%;
+  width: 500px;
+  height: 100px;
+  margin-left: -100px;
 }
-
+.extra {
+  position: absolute;
+  bottom: 0;
+  left: 40%;
+}
+/* 
 #form {
-  margin-left: 500px;
-}
+  position: relative;
+  left: 50%;
+  top: 50%;
+  width: 500px;
+  height: 100px;
+  margin-left: -100px;
+  margin-top: 10px;
+} */
 /* Three image containers (use 25% for four, and 50% for two, etc) */
 .column {
   float: left;
@@ -44,23 +65,45 @@
 
 /* text animations /Home */
 #typewriter {
-  position: relative;
+  /* position: static; */
   margin-left: 500px;
   /* margin-top: 250px; */
   font-family: "Press Start 2P", cursive;
+  position: relative;
+  left: 45%;
+  top: 50%;
+  width: 500px;
+  height: 100px;
+  margin-left: -100px;
+  margin-top: 50px;
 }
 
 .swapText {
-  position: relative;
-  margin-left: 500px;
+  /* position: static; */
+  /* margin-left: 500px; */
   /* margin-top: 250px; */
   font-family: "Press Start 2P", cursive;
+  position: relative;
+  left: 45%;
+  top: 50%;
+  width: 500px;
+  height: 100px;
+  margin-left: -100px;
+  margin-top: 10px;
 }
-
+/* 
 #inProgress {
   margin-left: 500px;
   font-family: "Press Start 2P", cursive;
-}
+  position: static;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  width: 200px;
+  height: 100px;
+  margin-left: -100px;
+  margin-top: 50px;
+} */
 /* /////////////////////////////////////////////////// */
 
 .navigation {
@@ -76,9 +119,11 @@
 }
 .navigation:hover {
   color: yellow;
-  box-shadow: 1px 1px 30px 5px rgb(7, 255, 193);
-  background-color: #06fcbe;
+  box-shadow: 1px 1px 30px 5px gold;
+  background-color: black;
 }
+/* #06fcbe; */
+/* rgb(7, 255, 193); */
 
 /* page styles */
 .page {

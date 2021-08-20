@@ -7,13 +7,14 @@ class Contact extends Component {
         <form
           action="https://formsubmit.co/oddthomas@csu.fullerton.edu"
           method="POST"
-          id="form"
+          className="form"
         >
           <input
             type="email"
             name="email"
             required
             placeholder="Your Email"
+            className="form"
           ></input>
           <input type="text" name="name" required placeholder="name"></input>
           <input
@@ -21,8 +22,11 @@ class Contact extends Component {
             name="message"
             required
             placeholder="Write your message here"
+            className="form"
           ></input>
-          <button type="submit">Send</button>
+          <button type="submit" className="form">
+            Send
+          </button>
         </form>
       </div>
     );

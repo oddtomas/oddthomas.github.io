@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./App.css";
 import github from "../src/pictures/github.png";
 import linkedin from "../src/pictures/linkedin.png";
-import canvas from "../src/pictures/canvas.jpg";
+// import canvas from "../src/pictures/canvas.jpg";
 import {
   Route,
   BrowserRouter as Router,
@@ -21,38 +21,42 @@ class App extends Component {
     super(props);
     this.state = {};
   }
+  // const [isMobile, setIsMobile] = useState(window.innerWidth <= 500);
+  // const [height, setHeight] = useState(window.innerHeight);
+  // const [width, setWidth] = useState(window.innerWidth);
+  // const handleResize = () => {
+  //   setIsMobile(window.innerWidth <= 500);
+  //   setHeight(window.innerHeight);
+  //   setWidth(window.innerWidth);
+  // };
 
-  githubClick = (props) => {
+  // useEffect(() => {
+  //   window.addEventListener("resize", handleResize);
+  //   return () => window.removeEventListener("resize", handleResize);
+  // }, []);
+  githubClick = () => {
     window.open("https://github.com/oddtomas");
   };
-  linkedInClick = (props) => {
+  linkedInClick = () => {
     window.open("https://www.linkedin.com/in/thomas-nguyen-9665761a7/");
   };
-
   render() {
     return (
       <Router>
         <>
-          <div className="App" style={{ backgroundImage: `url(${canvas})` }}>
+          {/* style={{ backgroundImage: `url(${canvas})` }} */}
+          <div className="App">
             <p id="links">
-              {/* left or middle mouse click takes you off page when creating new tab*/}
-              <a
-                href="/"
-                onClick={this.githubClick}
-                onMouseDown={this.githubClick}
-              >
+              <a href="/" onClick={this.githubClick}>
                 <img src={github} alt="github" width="50" height="50" />
               </a>
 
-              <a
-                href="/"
-                onClick={this.linkedInClick}
-                onMouseDown={this.linkedInClick}
-              >
+              <a href="/" onClick={this.linkedInClick}>
                 {" "}
                 <img src={linkedin} alt="linkedin" width="50" height="50" />
               </a>
             </p>
+
             <div className="nav">
               <ul>
                 <NavLink
@@ -116,6 +120,10 @@ class App extends Component {
                 </TransitionGroup>
               )}
             />
+            {/* 
+          <h1>{isMobile ? "Mobile app" : "Normal App"}</h1>
+          <p>Width: {width}</p>
+          <p>Height {height}</p> */}
           </div>
         </>
       </Router>
