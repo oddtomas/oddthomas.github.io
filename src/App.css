@@ -1,10 +1,12 @@
-/* .App {
-  background: url("canvas.jpg");
-  height: 100vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-} */
+.videoTag {
+  height: 100%;
+  width: 100%;
+  float: left;
+  top: 0;
+  padding: none;
+  position: fixed; /* optional depending on what you want to do in your app */
+  z-index: auto;
+}
 #name {
   position: absolute;
   top: 0%;
@@ -160,4 +162,7 @@
 .fade-exit.fade-exit-active {
   opacity: 0;
   transition: opacity 150ms linear;
+}
+
+@media (min-width: 600px) {
 }

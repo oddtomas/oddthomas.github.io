@@ -4,6 +4,12 @@ class About extends Component {
   render() {
     return (
       <div className="page">
+        {/* <img
+          src="https://miro.medium.com/max/3840/1*d7_9UH8XjbRKWtK9S6VSDg.jpeg"
+          alt="code inspiration"
+          height="200"
+          width="500"
+        ></img> */}
         <p class="about">
           Hi I'm Thomas, a web developer with a passion for clean, creative, and
           efficient code. I'm transitioning from the medical field in the Army
@@ -16,7 +22,6 @@ class About extends Component {
         <div class="extra">
           <p>Skills: JS, HTML, CSS, JEST, REACT, RAILS, POSTGRESQL</p>
           <p>Education: Masters in Computer Science at CSUF (pending)</p>
-          <p>Reach me at: oddthomas@csu.fullerton.edu</p>
         </div>
         {/* -who you are
         - photo

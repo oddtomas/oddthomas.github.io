@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import "./App.css";
 import github from "../src/pictures/github.png";
 import linkedin from "../src/pictures/linkedin.png";
-// import canvas from "../src/pictures/canvas.jpg";
 import {
   Route,
   BrowserRouter as Router,
@@ -15,25 +14,14 @@ import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 
 import { CSSTransition, TransitionGroup } from "react-transition-group";
+import paint from "../src/pictures/paint.mp4";
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {};
   }
-  // const [isMobile, setIsMobile] = useState(window.innerWidth <= 500);
-  // const [height, setHeight] = useState(window.innerHeight);
-  // const [width, setWidth] = useState(window.innerWidth);
-  // const handleResize = () => {
-  //   setIsMobile(window.innerWidth <= 500);
-  //   setHeight(window.innerHeight);
-  //   setWidth(window.innerWidth);
-  // };
 
-  // useEffect(() => {
-  //   window.addEventListener("resize", handleResize);
-  //   return () => window.removeEventListener("resize", handleResize);
-  // }, []);
   githubClick = () => {
     window.open("https://github.com/oddtomas");
   };
@@ -44,6 +32,9 @@ class App extends Component {
     return (
       <Router>
         <>
+          <video className="videoTag" autoPlay muted>
+            <source src={paint} type="video/mp4" />
+          </video>
           {/* style={{ backgroundImage: `url(${canvas})` }} */}
           <div className="App">
             <p id="links">
@@ -120,10 +111,6 @@ class App extends Component {
                 </TransitionGroup>
               )}
             />
-            {/* 
-          <h1>{isMobile ? "Mobile app" : "Normal App"}</h1>
-          <p>Width: {width}</p>
-          <p>Height {height}</p> */}
           </div>
         </>
       </Router>

@@ -1,10 +1,20 @@
 import React, { Component } from "react";
+import CopyMailTo from "react-copy-mailto";
 
 class Contact extends Component {
+  constructor() {
+    super();
+    this.state = {};
+  }
   render() {
     return (
       <div className="page">
-        <h1 className="form">Let's Talk</h1>
+        <h1 className="form">
+          Let's Talk @{" "}
+          <a>
+            <CopyMailTo email="oddthomas@csu.fullerton.edu" />
+          </a>
+        </h1>
 
         <form
           action="https://formsubmit.co/oddthomas@csu.fullerton.edu"
