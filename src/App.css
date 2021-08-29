@@ -1,11 +1,27 @@
-.App {
-  background: url("canvas.jpg");
-  height: 100vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.videoTag {
+  height: 100%;
+  width: 100%;
+  float: left;
+  top: 0;
+  padding: none;
+  position: fixed; /* optional depending on what you want to do in your app */
+  z-index: auto;
+}
+#name {
+  position: absolute;
+  top: 0%;
 }
 
+.skills {
+  position: absolute;
+  bottom: 0;
+  right: 0%;
+}
+
+.demoPage {
+  background-color: aliceblue;
+  margin-left: 300px;
+}
 /* contain */
 
 #links {
@@ -14,19 +30,36 @@
 #email {
   text-align: right;
 }
-
-.test {
-  text-align: center;
-  /* background-color: aliceblue; */
-  font-family: "Press Start 2P", cursive;
-  margin-top: 200px;
+/* // */
+.about {
+  font-size: 24px;
+  position: relative;
+  left: 45%;
+  top: 50%;
+  width: 500px;
+  height: 100px;
+  margin-left: -100px;
+  font-family: "Bebas Neue", cursive;
+}
+.extra {
+  font-size: 24px;
+  position: absolute;
+  bottom: 0;
+  left: 40%;
+  font-family: "Bebas Neue", cursive;
 }
 
-/* project images */
-/* #img {
-  position: absolute;
-  right: 0%;
-} */
+.form {
+  position: relative;
+  left: 35%;
+  /* top: 50%; */
+  width: 500px;
+  height: 100px;
+  margin-left: -100px;
+  /* margin-top: 10px; */
+  font-family: "Bebas Neue", cursive;
+  font-size: 24px;
+}
 /* Three image containers (use 25% for four, and 50% for two, etc) */
 .column {
   float: left;
@@ -46,23 +79,45 @@
 
 /* text animations /Home */
 #typewriter {
-  position: relative;
+  /* position: static; */
   margin-left: 500px;
   /* margin-top: 250px; */
   font-family: "Press Start 2P", cursive;
+  position: relative;
+  left: 45%;
+  top: 50%;
+  width: 500px;
+  height: 100px;
+  margin-left: -100px;
+  margin-top: 50px;
 }
 
 .swapText {
-  position: relative;
-  margin-left: 500px;
+  /* position: static; */
+  /* margin-left: 500px; */
   /* margin-top: 250px; */
   font-family: "Press Start 2P", cursive;
+  position: relative;
+  left: 45%;
+  top: 50%;
+  width: 500px;
+  height: 100px;
+  margin-left: -100px;
+  margin-top: 10px;
 }
-
+/* 
 #inProgress {
   margin-left: 500px;
   font-family: "Press Start 2P", cursive;
-}
+  position: static;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  width: 200px;
+  height: 100px;
+  margin-left: -100px;
+  margin-top: 50px;
+} */
 /* /////////////////////////////////////////////////// */
 
 .navigation {
@@ -78,9 +133,11 @@
 }
 .navigation:hover {
   color: yellow;
-  box-shadow: 1px 1px 30px 5px rgb(7, 255, 193);
-  background-color: #06fcbe;
+  box-shadow: 1px 1px 30px 5px gold;
+  background-color: black;
 }
+/* #06fcbe; */
+/* rgb(7, 255, 193); */
 
 /* page styles */
 .page {
@@ -100,9 +157,12 @@
   transition: opacity 300ms linear 150ms;
 }
 .fade-exit {
-  opacity: 1;
+  opacity: 0; /* leave at 0 or you get an image lag when exiting*/
 }
 .fade-exit.fade-exit-active {
   opacity: 0;
   transition: opacity 150ms linear;
+}
+
+@media (min-width: 600px) {
 }
