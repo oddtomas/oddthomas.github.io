@@ -39,12 +39,24 @@ class App extends Component {
           <div className="App">
             <p id="links">
               <a href="/" onClick={this.githubClick}>
-                <img src={github} alt="github" width="50" height="50" />
+                <img
+                  src={github}
+                  alt="github"
+                  width="50"
+                  height="50"
+                  className="linklogo"
+                />
               </a>
 
               <a href="/" onClick={this.linkedInClick}>
                 {" "}
-                <img src={linkedin} alt="linkedin" width="50" height="50" />
+                <img
+                  src={linkedin}
+                  alt="linkedin"
+                  width="50"
+                  height="50"
+                  className="linklogo"
+                />
               </a>
             </p>
             {/* <h4 id="name">Thomas Nguyen</h4> */}

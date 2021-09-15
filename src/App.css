@@ -22,6 +22,10 @@
   background-color: aliceblue;
   margin-left: 300px;
 }
+
+.linklogo {
+  position: relative;
+}
 /* contain */
 
 #links {
@@ -34,19 +38,29 @@
 .about {
   font-size: 24px;
   position: relative;
-  left: 45%;
+  left: 35%;
   top: 50%;
   width: 500px;
   height: 100px;
-  margin-left: -100px;
+  /* margin-left: -100px; */
   font-family: "Bebas Neue", cursive;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  align-content: center;
 }
 .extra {
   font-size: 24px;
-  position: absolute;
+  position: fixed;
   bottom: 0;
-  left: 40%;
+  left: 35%;
+  top: 90%;
   font-family: "Bebas Neue", cursive;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: nowrap;
 }
 
 .form {
@@ -90,6 +104,7 @@
   height: 100px;
   margin-left: -100px;
   margin-top: 50px;
+  display: flex;
 }
 
 .swapText {
@@ -104,6 +119,7 @@
   height: 100px;
   margin-left: -100px;
   margin-top: 10px;
+  display: flex;
 }
 /* 
 #inProgress {
@@ -122,14 +138,17 @@
 
 .navigation {
   font-size: 20px;
-  padding: 16px 48px;
+  /* padding: 16px 48px; */
   color: black;
-  height: 100vh;
+  /* height: 100vh; */
   text-decoration: none;
   border-radius: 10px;
   position: relative;
   overflow: hidden;
   font-family: "Press Start 2P", cursive;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
 }
 .navigation:hover {
   color: yellow;
