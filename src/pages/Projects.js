@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, CardText, CardBody, CardLink, CardTitle } from "reactstrap";
+import { Card, CardText, CardBody, CardTitle } from "reactstrap";
 import weebCoin from "../pictures/weebcoin.png";
 
 const Projects = (props) => {
@@ -18,20 +18,20 @@ const Projects = (props) => {
               manage their own portfolios. Add coins, update assets, delete
               assets, and learn about crypto!
             </CardText>
-            <CardLink
+            <a
               href="https://sleepy-cove-85300.herokuapp.com/"
               target="_blank"
               className="cardLink"
             >
               Website
-            </CardLink>
-            <CardLink
+            </a>
+            <a
               href="https://github.com/Weeb-Developers/Weeb-Coin"
               target="_blank"
               className="cardLink"
             >
               Code
-            </CardLink>
+            </a>
           </CardBody>
         </Card>
       </div>
