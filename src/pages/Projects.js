@@ -1,40 +1,46 @@
 import React from "react";
 import {
   Card,
-  Button,
-  CardImg,
-  CardTitle,
   CardText,
-  CardDeck,
-  CardSubtitle,
   CardBody,
   CardLink,
-  CardImgOverlay,
+  CardTitle,
+  CardSubtitle,
 } from "reactstrap";
+import weebCoin from "../pictures/weebcoin.png";
 
 const Projects = (props) => {
   return (
     <>
-      {" "}
-      <div>
+      <div className="projectCard">
         <Card>
           <CardBody>
-            <CardTitle tag="h5">Card title</CardTitle>
-            <CardSubtitle tag="h6" className="mb-2 text-muted">
-              Card subtitle
-            </CardSubtitle>
+            <CardTitle tag="h5">Weeb Coin</CardTitle>
           </CardBody>
-          <img width="100%" src="/assets/318x180.svg" alt="Card image cap" />
+          <img width="100%" src={weebCoin} alt="weeb coin" />
           <CardBody>
             <CardText>
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+              A beginner friendly crypto portfolio app, with CRUD functionality,
+              external API, and relational database. Users can sign up and
+              manage their own portfolios. Add coins, update assets, delete
+              assets, and learn about crypto!
             </CardText>
-            <CardLink href="#">Card Link</CardLink>
-            <CardLink href="#">Another Link</CardLink>
+            <CardLink
+              href="https://sleepy-cove-85300.herokuapp.com/"
+              target="_blank"
+              className="cardLink"
+            >
+              Website
+            </CardLink>
+            <CardLink
+              href="https://github.com/Weeb-Developers/Weeb-Coin"
+              target="_blank"
+              className="cardLink"
+            >
+              Code
+            </CardLink>
           </CardBody>
         </Card>
-        <br></br>
       </div>
     </>
   );

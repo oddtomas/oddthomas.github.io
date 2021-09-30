@@ -38,18 +38,55 @@ class Home extends Component {
         <div className="skills">
           <h4> Skills</h4>
 
-          <img src={js} alt="javascript logo" height="50" width="50"></img>
-          <img src={html} alt="html logo" height="50" width="50"></img>
-          <img src={css} alt="css logo" height="50" width="50"></img>
-          <img src={react} alt="react logo" height="50" width="50"></img>
-          <img src={rails} alt="rails logo" height="50" width="50"></img>
+          <img
+            src={js}
+            alt="javascript logo"
+            height="50"
+            width="50"
+            className="logo"
+          ></img>
+          <img
+            src={html}
+            alt="html logo"
+            height="50"
+            width="50"
+            className="logo"
+          ></img>
+          <img
+            src={css}
+            alt="css logo"
+            height="50"
+            width="50"
+            className="logo"
+          ></img>
+          <img
+            src={react}
+            alt="react logo"
+            height="50"
+            width="50"
+            className="logo"
+          ></img>
+          <img
+            src={rails}
+            alt="rails logo"
+            height="50"
+            width="50"
+            className="logo"
+          ></img>
           <img
             src={postgresql}
             alt="postgresql logo"
             height="50"
             width="50"
+            className="logo"
           ></img>
-          <img src={jest} alt="jest logo" height="50" width="50"></img>
+          <img
+            src={jest}
+            alt="jest logo"
+            height="50"
+            width="50"
+            className="logo"
+          ></img>
         </div>
       </div>
     );

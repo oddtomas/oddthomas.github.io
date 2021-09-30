@@ -16,7 +16,7 @@ class Contact extends Component {
           </a>
         </h1>
 
-        <form
+        {/* <form
           action="https://formsubmit.co/oddthomas@csu.fullerton.edu"
           method="POST"
           className="form"
@@ -45,7 +45,7 @@ class Contact extends Component {
           <button type="submit" className="form">
             Send
           </button>
-        </form>
+        </form> */}
       </div>
     );
   }
