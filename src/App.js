@@ -32,9 +32,13 @@ class App extends Component {
     return (
       <Router>
         <>
-          <video className="videoTag" autoPlay muted>
+          <video id="videoTag" autoPlay muted>
             <source src={paint} type="video/mp4" />
           </video>
+          <script>
+            var bgvideo = document.getElementById("videoTag"); bgvideo.muted =
+            true; bgvideo.play();
+          </script>
           {/* style={{ backgroundImage: `url(${canvas})` }} */}
           <div className="App">
             <p id="links">
