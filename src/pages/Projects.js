@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  Card,
-  CardText,
-  CardBody,
-  CardLink,
-  CardTitle,
-  CardSubtitle,
-} from "reactstrap";
+import { Card, CardText, CardBody, CardLink, CardTitle } from "reactstrap";
 import weebCoin from "../pictures/weebcoin.png";
 
 const Projects = (props) => {
