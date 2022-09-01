@@ -12,7 +12,7 @@ class Contact extends Component {
         <h1 className="form">
           Let's Talk @{" "}
           <a>
-            <CopyMailTo email="oddthomas@csu.fullerton.edu" />
+            <CopyMailTo email="thomas.nguyense@gmail.com" />
           </a>
         </h1>
 
