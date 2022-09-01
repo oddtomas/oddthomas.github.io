@@ -1,7 +1,7 @@
 import React from "react";
 import { Card, CardText, CardBody, CardTitle } from "reactstrap";
 import weebCoin from "../pictures/weebcoin.png";
-import bookGenerator from "../pictures/bookGenerator.png";
+import bookGenerator from "../pictures/BookGenerator.png";
 
 const Projects = (props) => {
   return (

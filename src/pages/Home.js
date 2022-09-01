@@ -17,9 +17,7 @@ class Home extends Component {
   render() {
     return (
       <div className="page">
-        {/* <h1 id="inProgress">
-          IN PROGRESS <img src={doge} alt="doge" height="2100" width="2100"></img>
-        </h1> */}
+
 
         <div id="typewriter">
           <Typewriter
@@ -62,13 +60,6 @@ class Home extends Component {
           <img
             src={react}
             alt="react logo"
-            height="50"
-            width="50"
-            className="logo"
-          ></img>
-          <img
-            src={rails}
-            alt="rails logo"
             height="50"
             width="50"
             className="logo"
