@@ -25,7 +25,7 @@ class Home extends Component {
           <Typewriter
             options={{
               strings: [
-                "Hi! I'm Thomas, a full stack web developer! ",
+                "Hi! I'm Thomas Nguyen, a full stack web developer! ",
                 "Welcome to my website!",
               ],
               autoStart: true,
