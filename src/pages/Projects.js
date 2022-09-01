@@ -35,7 +35,6 @@ const Projects = (props) => {
             </a>
           </CardBody>
         </Card>
-        <div className="projectCard">
         <Card>
           <CardBody>
             <CardTitle tag="h5">SADA-U Book Generator</CardTitle>
@@ -61,7 +60,6 @@ const Projects = (props) => {
             </a>
           </CardBody>
         </Card>
-        </div>
       </div>
     </>
   );
