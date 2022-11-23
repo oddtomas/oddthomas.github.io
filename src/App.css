@@ -1,11 +1,98 @@
-.projectCard {
-  width: 50%;
+.App-logo {
+  height: 50vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 40s linear;
+  }
+}
+
+.App-header {
+  background-color: #ffffff;
+  /* min-height: 100vh; */
   display: flex;
-  margin-left: 25%;
-  margin-bottom: 20%;
-  margin-top: 10%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  /* color: white; */
+  margin-bottom: 10%;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.experience {
+  display: flex;
+  justify-content: center;
+}
+.resume {
+  border: 2px solid black;
+  margin-left: 5%;
+  margin-right: 5%;
+  max-width: 90%;
+}
+
+.button-54 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px,
+    5px 5px 0px 0px;
+  /* position: relative; */
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-bottom: 10px;
+  /* margin: 0;
+  position: absolute;
+  top: 1%;
+  left: 43%; */
+  align-content: flex-end;
+}
+
+.button-54:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+@media (min-width: 768px) {
+  .button-54 {
+    padding: 0.25em 0.75em;
+  }
+}
+
+.projectCard {
   font-family: "Bebas Neue", cursive;
   font-size: 24px;
+  margin: 10%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  /* justify-content: center; */
+  /* height: 50%; */
+  /* width: 1rem;
+  height: 1rem;
+} */
+  margin: 5px;
+  width: 1rm;
 }
 
 @media screen and (max-width: 649px) {
@@ -42,9 +129,10 @@
   display: flex;
   flex-wrap: wrap;
 }
-/* .logo {
-  align-items: flex-end;
-} */
+
+.skillText {
+  margin-right: 5px;
+}
 
 .demoPage {
   background-color: aliceblue;
@@ -64,49 +152,27 @@
 }
 /* // */
 .about {
-  font-size: 24px;
+  font-size: 34px;
   position: relative;
-  /* left: 35%;
-  top: 50%;
-  width: 500px;
-  height: 100px; */
-  /* margin-left: -100px; */
   font-family: "Bebas Neue", cursive;
   display: flex;
   justify-content: center;
   /* align-items: center; */
   align-content: center;
   flex-wrap: wrap;
-  margin: 50px;
-  margin-bottom: 100px;
+  margin: 25%;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 @media screen and (max-width: 535px) {
   .about {
     font-size: 18px;
   }
 }
-/* .extra {
-  font-size: 24px;
-  position: fixed;
-  bottom: 0;
-  left: 35%;
-  top: 90%;
-  font-family: "Bebas Neue", cursive;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-  flex-wrap: nowrap;
-} */
 
 .form {
   position: relative;
-  /* left: 35%; */
-  /* top: 50%; */
-  /* width: 500px;
-  height: 100px;
-  margin-left: -100px; */
-  /* margin-top: 10px; */
+
   font-family: "Bebas Neue", cursive;
   font-size: 50px;
   display: flex;
@@ -138,17 +204,10 @@
 
 /* text animations /Home */
 #typewriter {
-  /* position: static; */
-  /* margin-left: 500px; */
-  /* margin-top: 250px; */
   font-family: "Press Start 2P", cursive;
   position: relative;
-  /* left: 45%;
-  top: 50%;
-  width: 500px;
-  height: 100px;
-  margin-left: -100px; */
-  margin-top: 50px;
+
+  margin-top: 10px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -171,24 +230,7 @@
   flex-wrap: wrap;
   margin-bottom: 1px;
 }
-/* 
-#inProgress {
-  margin-left: 500px;
-  font-family: "Press Start 2P", cursive;
-  position: static;
-  position: relative;
-  left: 50%;
-  top: 50%;
-  width: 200px;
-  height: 100px;
-  margin-left: -100px;
-  margin-top: 50px;
-} */
-/* /////////////////////////////////////////////////// */
-/* .nav {
-  display: flex;
-  flex-wrap: wrap;
-} */
+
 .navigation {
   font-size: 20px;
   padding: 5px 4px;
@@ -212,11 +254,7 @@
 }
 .navigation:hover {
   color: yellow;
-  /* box-shadow: 1px 1px 30px 5px gold; */
-  /* background-color: black; */
 }
-/* #06fcbe; */
-/* rgb(7, 255, 193); */
 
 /* page styles */
 .page {

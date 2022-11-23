@@ -1,31 +1,19 @@
 import React, { Component } from "react";
-// import { render } from "react-dom";
 import Typewriter from "typewriter-effect";
-// import doge from "../pictures/doge.png";
 import js from "../pictures/javascript.png";
 import html from "../pictures/html.png";
 import css from "../pictures/css.png";
 import react from "../pictures/react.png";
-import rails from "../pictures/rails.png";
-import postgresql from "../pictures/postgresql.png";
-import jest from "../pictures/jest.png";
-
 import Demo from "./demo";
-// render(<Demo />, document.getElementById("root"));
 
 class Home extends Component {
   render() {
     return (
       <div className="page">
-
-
         <div id="typewriter">
           <Typewriter
             options={{
-              strings: [
-                "Hi! I'm Thomas Nguyen, a full stack web developer! ",
-                "Welcome to my website!",
-              ],
+              strings: ["Hi! I'm Thomas your next Web Developer"],
               autoStart: true,
               // loop: true,
             }}
@@ -33,9 +21,15 @@ class Home extends Component {
         </div>
         <br></br>
         <Demo id="demo"></Demo>
+        {/* <p className="about">
+          I'm Thomas a web developer with a passion for clean, creative, and
+          efficient code. I'm transitioning from the medical field in the Army
+          where problem solving was my day to day job so the switch to
+          programming felt very natural. Like medicine, coding is never ending
+          journey of change and learning.
+        </p> */}
         <div className="skills">
-          <h4> Skills</h4>
-
+          <h4 className="skillText"> Skills</h4>
           <img
             src={js}
             alt="javascript logo"
@@ -60,20 +54,6 @@ class Home extends Component {
           <img
             src={react}
             alt="react logo"
-            height="50"
-            width="50"
-            className="logo"
-          ></img>
-          <img
-            src={postgresql}
-            alt="postgresql logo"
-            height="50"
-            width="50"
-            className="logo"
-          ></img>
-          <img
-            src={jest}
-            alt="jest logo"
             height="50"
             width="50"
             className="logo"

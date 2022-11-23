@@ -7,7 +7,7 @@ const Projects = (props) => {
   return (
     <>
       <div className="projectCard">
-        <Card>
+        <Card className="Card">
           <CardBody>
             <CardTitle tag="h5">Weeb Coin</CardTitle>
           </CardBody>
@@ -35,14 +35,21 @@ const Projects = (props) => {
             </a>
           </CardBody>
         </Card>
-        <Card>
+        <Card className="Card">
           <CardBody>
             <CardTitle tag="h5">SADA-U Book Generator</CardTitle>
           </CardBody>
           <img width="100%" src={bookGenerator} alt="book generator" />
           <CardBody>
             <CardText>
-              An AI text and image generator application that takes a users prompt, send its to a backend Flask server which feeds the prompt to the text and image generations models and uploads the images with the text attached as metadata to a google cloud storage bucket. Pubsub is used to listen for changes and trigger a callback on the front-end to look for the new items in the bucket and display them. Users can also download the finished book as a PDF.
+              An AI text and image generator application that takes a users
+              prompt, send its to a backend Flask server which feeds the prompt
+              to the text and image generations models and uploads the images
+              with the text attached as metadata to a google cloud storage
+              bucket. Pubsub is used to listen for changes and trigger a
+              callback on the front-end to look for the new items in the bucket
+              and display them. Users can also download the finished book as a
+              PDF.
             </CardText>
             <a
               href="https://github.com/oddtomas/streamlit"

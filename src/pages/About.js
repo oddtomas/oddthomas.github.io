@@ -1,24 +1,40 @@
 import React, { Component } from "react";
+import Resume from "../pictures/Resume.png";
+import resumePDF from "./updatedResume.pdf";
 
+// Function will execute on click of button
+const onButtonClick = () => {
+  // using Java Script method to get PDF file
+  fetch(resumePDF).then((response) => {
+    response.blob().then((blob) => {
+      // Creating new object of PDF file
+      const fileURL = window.URL.createObjectURL(blob);
+      // Setting various property values
+      let alink = document.createElement("a");
+      alink.href = fileURL;
+      alink.download = "ThomasResume.pdf";
+      alink.click();
+    });
+  });
+};
 class About extends Component {
   render() {
     return (
-      <div className="page">
-
-        <p class="about">
-          Hi I'm Thomas, a web developer with a passion for clean, creative, and
-          efficient code. I'm currently pursuing my Masters degree in Computer
-          Science and transitioning from the medical field in the Army where
-          problem solving was my day to day job so I felt like the transition to
-          programming was very natural. In a way I'm still just solving problems
-          for people, going from physical and mental support to a broader scale
-          of support through coding and creating. Like medicine, coding is never
-          ending journey of change and learning.
-        </p>
-
+      <div>
+        <div className="experience">
+          <button class="button-54" role="button" onClick={onButtonClick}>
+            Download PDF
+          </button>
+        </div>
+        <img
+          src={Resume}
+          // alt="react logo"
+          // height="50"
+          // width="50"
+          className="resume"
+        ></img>
       </div>
     );
   }
 }
-
 export default About;

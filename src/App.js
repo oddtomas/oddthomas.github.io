@@ -15,6 +15,7 @@ import Contact from "./pages/Contact";
 
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import paint from "../src/pictures/paint.mp4";
+import head from "./pictures/texthead.svg";
 
 class App extends Component {
   constructor(props) {
@@ -32,13 +33,13 @@ class App extends Component {
     return (
       <Router>
         <>
-          <video id="videoTag" autoPlay muted>
+          {/* <video id="videoTag" autoPlay muted>
             <source src={paint} type="video/mp4" />
           </video>
           <script>
             var bgvideo = document.getElementById("videoTag"); bgvideo.muted =
             true; bgvideo.play();
-          </script>
+          </script> */}
           {/* style={{ backgroundImage: `url(${canvas})` }} */}
           <div className="App">
             <p id="links">
@@ -63,7 +64,7 @@ class App extends Component {
                 />
               </a>
             </p>
-            {/* <h4 id="name">Thomas Nguyen</h4> */}
+
             <div className="nav">
               <ul>
                 <NavLink
@@ -82,7 +83,7 @@ class App extends Component {
                     activeClassName="active"
                     className="navigation"
                   >
-                    About
+                    Experience
                   </NavLink>{" "}
                 </p>
                 <p>
@@ -127,6 +128,9 @@ class App extends Component {
                 </TransitionGroup>
               )}
             />
+            <header className="App-header">
+              <img src={head} className="App-logo" alt="logo" />
+            </header>
           </div>
         </>
       </Router>
